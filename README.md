@@ -74,11 +74,12 @@ node   scripts/servir.mjs        # http://127.0.0.1:4197 (también se abre con d
 recalcula rumbos y distancias). `scripts/paleta.py` imprime los tokens y sus contrastes.
 `scripts/medir_roseta.py` saca las medidas de la roseta del JPG.
 
-`verificar.mjs` da **154/154** (2026-10-02). Comprueba, entre otras cosas: el checklist de web desde cero (cursor, cookies,
+`verificar.mjs` da **162/162** (2026-10-02). Comprueba, entre otras cosas: el checklist de web desde cero (cursor, cookies,
 menú bajo `backdrop-filter`, héroe en 360×640, 375×667, 390×844 y 768×1024, `autoRound`
 muestreado en el tiempo), las prohibiciones de contenido, las citas contra DATOS, las cuatro
 combinaciones del elegidor, los rumbos del diagrama contra `lugares.json`, la cortina (fotogramas a
-mitad, aterrizaje a ±2 px, sin GSAP, movimiento reducido), el contraste AA de cada pareja de tokens
+mitad, aterrizaje a ±2 px medido en piezas del dibujo, también en iPhone 13 y Pixel 5 emulados, sin
+GSAP, movimiento reducido), el contraste AA de cada pareja de tokens
 en las tres paletas, las dos densidades × tres paletas y la receta de borrado del mando. Con
 `--capturas` deja 39 capturas en `screenshots/` (fuera del repo): cortina a 0,82 / 1,62 / 1,92 s,
 cada sección a 1440 y 390, héroe a 360×640, 375×667, 390×844 y 768×1024, sin GSAP, movimiento

@@ -12,7 +12,7 @@ import http from 'node:http';
 import { execFileSync } from 'node:child_process';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
-import { chromium } from 'file:///C:/Users/alvar/Desktop/WEBS%20NEGOCIOS/alvarotaiagu.github.io/node_modules/playwright/index.mjs';
+import { chromium, devices } from 'file:///C:/Users/alvar/Desktop/WEBS%20NEGOCIOS/alvarotaiagu.github.io/node_modules/playwright/index.mjs';
 
 const require = createRequire('C:/Users/alvar/Desktop/WEBS NEGOCIOS/alvarotaiagu.github.io/package.json');
 const sharp = require('sharp');
@@ -50,8 +50,9 @@ const URL = `http://127.0.0.1:${PUERTO}/`;
 const servidor = await servir(raiz, PUERTO);
 const navegador = await chromium.launch();
 
-async function abrir({ ancho = 1440, alto = 900, reducido = false, sinGsap = false, extra = '', cookiesVistas = false, estado = null, init = null } = {}) {
-  const ctx = await navegador.newContext({ viewport: { width: ancho, height: alto }, reducedMotion: reducido ? 'reduce' : 'no-preference', storageState: estado || undefined });
+async function abrir({ ancho = 1440, alto = 900, reducido = false, sinGsap = false, extra = '', cookiesVistas = false, estado = null, init = null, dispositivo = null } = {}) {
+  /* dispositivo: un móvil emulado de verdad (viewport meta, táctil, densidad), no una ventana estrecha */
+  const ctx = await navegador.newContext({ ...(dispositivo ? devices[dispositivo] : { viewport: { width: ancho, height: alto } }), reducedMotion: reducido ? 'reduce' : 'no-preference', storageState: estado || undefined });
   if (init) await ctx.addInitScript(init);
   if (sinGsap) await ctx.route(/cdn\.jsdelivr\.net\/npm\/(gsap|lenis)/, r => r.abort());
   if (cookiesVistas) await ctx.addInitScript(() => { try { localStorage.setItem('cdlj-cookies', '1'); } catch (e) {} });
@@ -63,6 +64,19 @@ async function abrir({ ancho = 1440, alto = 900, reducido = false, sinGsap = fal
   pg.on('requestfailed', r => { if (!(sinGsap && /jsdelivr/.test(r.url()))) errores.push('fallo ' + r.url() + ' ' + (r.failure() || {}).errorText); });
   await pg.goto(URL + extra, { waitUntil: 'load' });
   return { ctx, pg, errores };
+}
+/* aterrizaje de la cortina, medido en piezas del DIBUJO (travesaño, anillos, base de la peana),
+   no en la caja del <svg>: en móvil la caja puede cuadrar y el dibujo no (max-width lo encogía) */
+function medirAterrizaje() {
+  const piezas = ['.cruz__travesano', '.simbolo__roseta--izq .roseta__anillo', '.simbolo__roseta--der .roseta__anillo', '.peana__base'];
+  const clon = document.querySelector('.cortina__simbolo'), real = document.getElementById('simbolo-heroe');
+  let peor = 0; const detalle = [];
+  for (const p of piezas) {
+    const a = clon.querySelector(p).getBoundingClientRect(), b = real.querySelector(p).getBoundingClientRect();
+    const d = Math.max(Math.abs(a.left - b.left), Math.abs(a.top - b.top), Math.abs(a.width - b.width), Math.abs(a.height - b.height));
+    peor = Math.max(peor, d); detalle.push(p.split(' ').pop().replace('.', '') + ' ' + d.toFixed(1));
+  }
+  return { peor, detalle: detalle.join(', ') };
 }
 async function recorrer(pg, paso = 520) {
   await pg.mouse.move(Math.round((pg.viewportSize().width) / 2), 400);
@@ -311,16 +325,42 @@ seccion('Cortina «el compás»: fotogramas, autoRound y aterrizaje');
   await captura(pg, '00-cortina-c-1,92s');
   await pg.evaluate(() => { const t = window.__cortina; t.seek(t.duration() - 0.0005, false); 0; });
   await pg.waitForTimeout(80);
-  const aterrizaje = await pg.evaluate(() => {
-    const a = document.querySelector('.cortina__simbolo').getBoundingClientRect(); const b = document.getElementById('simbolo-heroe').getBoundingClientRect();
-    return { dx: a.left - b.left, dy: a.top - b.top, dw: a.width - b.width, dh: a.height - b.height };
-  });
-  ok('el símbolo aterriza a ±2 px de su sitio', Object.values(aterrizaje).every(v => Math.abs(v) <= 2), JSON.stringify(Object.fromEntries(Object.entries(aterrizaje).map(([k, v]) => [k, Math.round(v * 10) / 10]))));
+  const aterrizaje = await pg.evaluate(medirAterrizaje);
+  ok('el símbolo aterriza a ±2 px de su sitio (medido en el dibujo, no en la caja)', aterrizaje.peor <= 2, 'peor ' + aterrizaje.peor.toFixed(2) + ' px · ' + aterrizaje.detalle);
   ok('la cortina dura ≤ 2,2 s', await pg.evaluate(() => window.__cortina.duration() <= 2.2001), String(await pg.evaluate(() => window.__cortina.duration().toFixed(2))));
   await pg.evaluate(() => { window.__cortina.play(); 0; });
   ok('al terminar: cortina en display:none', await esperarCortinaFuera(pg));
   ok('el símbolo real queda visible y el clon desaparece', await pg.evaluate(() => getComputedStyle(document.getElementById('simbolo-heroe')).visibility === 'visible' && !document.querySelector('.cortina__simbolo')));
   ok('la cortina no se repite en la misma sesión', await (async () => { await pg.reload({ waitUntil: 'load' }); return pg.evaluate(() => getComputedStyle(document.getElementById('cortina')).display === 'none'); })());
+  await ctx.close();
+}
+/* la cortina en móviles emulados de verdad (no una ventana estrecha de escritorio) */
+for (const dispositivo of ['iPhone 13', 'Pixel 5']) {
+  const { ctx, pg, errores } = await abrir({ dispositivo, cookiesVistas: true });
+  await pg.waitForFunction(() => !!window.__cortina, null, { timeout: 6000 });
+  await pg.evaluate(() => { window.__cortina.pause(); window.__cortina.seek(1.0, false); 0; });
+  await pg.waitForTimeout(120);
+  const a = await pg.evaluate(() => {
+    const r = document.querySelector('.cortina__simbolo .simbolo__roseta--izq .roseta__anillo').getBoundingClientRect();
+    return { centro: r.left + r.width / 2 - innerWidth / 2, izq: r.left, der: innerWidth - r.right, ancho: r.width, vw: innerWidth };
+  });
+  ok(`${dispositivo}: mientras se traza, la roseta va centrada y entera en pantalla`, Math.abs(a.centro) <= 3 && a.izq >= 0 && a.der >= 0 && a.ancho > a.vw * 0.3, JSON.stringify(Object.fromEntries(Object.entries(a).map(([k, v]) => [k, Math.round(v)]))));
+  await captura(pg, `00-cortina-${dispositivo.replace(' ', '')}-1,0s`);
+  await pg.evaluate(() => { window.__cortina.seek(1.74, false); 0; });
+  await pg.waitForTimeout(120);
+  const b = await pg.evaluate(() => {
+    const s = document.querySelector('.cortina__simbolo');
+    const i = s.querySelector('.simbolo__roseta--izq .roseta__dientes').getBoundingClientRect(), d = s.querySelector('.simbolo__roseta--der .roseta__dientes').getBoundingClientRect();
+    return { izq: i.left, der: innerWidth - d.right, simetria: (i.left) - (innerWidth - d.right) };
+  });
+  ok(`${dispositivo}: el símbolo entero cabe y va centrado antes de volar`, b.izq >= 0 && b.der >= 0 && Math.abs(b.simetria) <= 3, JSON.stringify(Object.fromEntries(Object.entries(b).map(([k, v]) => [k, Math.round(v)]))));
+  await captura(pg, `00-cortina-${dispositivo.replace(' ', '')}-1,74s`);
+  await pg.evaluate(() => { const t = window.__cortina; t.seek(t.duration() - 0.0005, false); 0; });
+  await pg.waitForTimeout(120);
+  const c = await pg.evaluate(medirAterrizaje);
+  ok(`${dispositivo}: aterriza a ±2 px (dibujo)`, c.peor <= 2, 'peor ' + c.peor.toFixed(2) + ' px · ' + c.detalle);
+  await pg.evaluate(() => { window.__cortina.play(); 0; });
+  ok(`${dispositivo}: la cortina se retira y sin errores`, await esperarCortinaFuera(pg) && errores.length === 0, errores.slice(0, 3).join(' | '));
   await ctx.close();
 }
 {

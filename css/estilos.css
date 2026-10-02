@@ -575,8 +575,10 @@ html.con-js:not(.sin-cortina):not(.cortina-fuera) .cortina { display: block; }
 html.con-js .cortina.oculta { display: none !important; }
 .cortina__panel { position: absolute; inset: 0; background: var(--crema); will-change: transform; }
 .cortina__curva { position: absolute; top: calc(100% - 1px); left: 0; width: 100%; height: 14vh; fill: var(--crema); transform-origin: 50% 0; transform: scaleY(0); }
-.cortina__escena { position: absolute; inset: 0; }
-.cortina__simbolo { position: absolute; left: 0; top: 0; fill: var(--tinta); overflow: visible; transform-origin: 0 0; will-change: transform; }
+.cortina__escena { position: absolute; inset: 0; overflow: hidden; }
+/* el clon mide 540 × 424 px y se escala con transform: sin max-width (la regla general
+   svg{max-width:100%} lo encogía en móvil, descentraba la roseta y hacía saltar el aterrizaje) */
+.cortina__simbolo { position: absolute; left: 0; top: 0; max-width: none; fill: var(--tinta); overflow: visible; transform-origin: 0 0; will-change: transform; }
 .cortina__simbolo .roseta__traza { color: var(--tinta); }
 .compas__punta { fill: var(--tinta); }
 .compas__brazo { stroke: var(--tinta); stroke-width: 1.6; }
