@@ -1,0 +1,269 @@
+{
+  "origen": {
+    "nombre": "Casa de la Judería · C/ Santiago 7A",
+    "lat": 38.686062,
+    "lon": -7.101249,
+    "fuente": "Nominatim «7, Calle Santiago, Olivenza» → edificio way/1049680372 (https://www.openstreetmap.org/way/1049680372), 2026-10-02"
+  },
+  "metodo": "rumbo = azimut inicial esférico desde el origen (grados desde el norte, sentido horario); recta = haversine; punto = nodo OSM, centroide de los nodos de la vía o, en la calle Moreno Nieto, su extremo más cercano a la casa; distancias a pie OSRM (routing.openstreetmap.de, perfil foot) 2026-10-02; minutos = ceil(m/80); anillo 1/3/5 = ≤1 min / ≤3 min / resto",
+  "lugares": [
+    {
+      "id": "magdalena",
+      "nombre": "Iglesia de la Magdalena",
+      "lat": 38.686201,
+      "lon": -7.100356,
+      "rumbo": 78.7,
+      "recta_m": 79,
+      "pie_m": 80,
+      "pie_osrm_m": 76,
+      "minutos": 1,
+      "anillo": 1,
+      "fuente": {
+        "osm": "way/183313818",
+        "url": "https://www.openstreetmap.org/way/183313818",
+        "punto": "centroide de los 24 nodos de la vía",
+        "fecha": "2026-10-02"
+      },
+      "corto": "Iglesia de la Magdalena",
+      "texto": "De estilo manuelino. Elegida «El Mejor Rincón de España 2012» por votación popular en el concurso de la Guía Repsol.",
+      "fuente_texto": {
+        "url": "https://web.archive.org/web/20120927125132/http://apps.repsol.com/elmejorrincon/",
+        "dice": "La Iglesia de La Magdalena es El Mejor Rincón de España 2012.",
+        "fecha": "2026-10-02"
+      },
+      "n": 1
+    },
+    {
+      "id": "ayuntamiento",
+      "nombre": "Ayuntamiento",
+      "lat": 38.685547,
+      "lon": -7.100837,
+      "rumbo": 148,
+      "recta_m": 68,
+      "pie_m": 80,
+      "pie_osrm_m": 79,
+      "minutos": 1,
+      "anillo": 1,
+      "fuente": {
+        "osm": "node/6865900018",
+        "url": "https://www.openstreetmap.org/node/6865900018",
+        "punto": "nodo",
+        "fecha": "2026-10-02"
+      },
+      "corto": "Ayuntamiento",
+      "texto": "El antiguo palacio de los Duques de Cadaval, en la plaza.",
+      "n": 2,
+      "fuente_texto": {
+        "url": "https://siempredepaso.es/una-visita-a-olivenza-badajoz",
+        "dice": "el Palacio de los Duques de Cadaval alberga hoy el Ayuntamiento, en la Plaza de la Constitución",
+        "fecha": "2026-10-02",
+        "nota": "fuente secundaria (guías de viaje que coinciden); lo cuenta también el anfitrión"
+      }
+    },
+    {
+      "id": "esnoga",
+      "nombre": "Calle Moreno Nieto, antigua rua da Esnoga",
+      "lat": 38.685361,
+      "lon": -7.101325,
+      "rumbo": 184.8,
+      "recta_m": 78,
+      "pie_m": 110,
+      "pie_osrm_m": 113,
+      "minutos": 2,
+      "anillo": 3,
+      "nota": "hoy calle Moreno Nieto; la frase del nombre de la casa la cita en la web",
+      "fuente": {
+        "osm": "way/183313927",
+        "url": "https://www.openstreetmap.org/way/183313927",
+        "punto": "extremo de la vía más cercano a la casa: node/1936809889",
+        "fecha": "2026-10-02"
+      },
+      "corto": "Calle Moreno Nieto",
+      "texto": "La antigua rua da Esnoga.",
+      "fuente_texto": {
+        "url": "https://limbocultura.org/ruas-e-raizes-calle-moreno-nieto-rua-da-esnoga/",
+        "dice": "rua da Esnoga en un documento de 1462; desde 1896, calle Moreno Nieto",
+        "fecha": "2026-10-02"
+      },
+      "n": 3
+    },
+    {
+      "id": "santa-maria",
+      "nombre": "Iglesia de Santa María del Castillo",
+      "lat": 38.685107,
+      "lon": -7.099602,
+      "rumbo": 126.6,
+      "recta_m": 178,
+      "pie_m": 175,
+      "pie_osrm_m": 177,
+      "minutos": 3,
+      "anillo": 3,
+      "fuente": {
+        "osm": "way/560034728",
+        "url": "https://www.openstreetmap.org/way/560034728",
+        "punto": "centroide de los 33 nodos de la vía",
+        "fecha": "2026-10-02"
+      },
+      "corto": "Santa María del Castillo",
+      "texto": "Guarda el Árbol de Jesé, un retablo de madera tallada y policromada de 10,29 m de alto, «el mayor que se conserva», según Turismo de Extremadura.",
+      "fuente_texto": {
+        "url": "https://www.turismoextremadura.com/es/explora/Olivenza/",
+        "dice": "el mayor que se conserva de los que aún quedan. Realizado en madera tallada y policromada y con 10,29 m de altura",
+        "fecha": "2026-10-02"
+      },
+      "n": 4
+    },
+    {
+      "id": "centro-judaico",
+      "nombre": "Centro de Interpretación del Pasado Judaico",
+      "lat": 38.685252,
+      "lon": -7.099618,
+      "rumbo": 122.5,
+      "recta_m": 168,
+      "pie_m": 175,
+      "pie_osrm_m": 166,
+      "minutos": 3,
+      "anillo": 3,
+      "nota": "pendiente de confirmar que sigue abierto; punto = Plaza de Santa María (el centro no está en OSM)",
+      "fuente": {
+        "osm": "way/1006251162",
+        "url": "https://www.openstreetmap.org/way/1006251162",
+        "punto": "centroide de los 17 nodos de la vía",
+        "fecha": "2026-10-02"
+      },
+      "corto": "Centro de Interpretación del Pasado Judaico",
+      "texto": "En la Plaza de Santa María; se inauguró en diciembre de 2024. Preguntad antes de ir si está abierto.",
+      "fuente_texto": {
+        "url": "https://es.ayuntamientodeolivenza.com/un-nuevo-recurso-turistico-e-historico-para-el-conocimiento-de-la-cultura-judaica-de-olivenza/",
+        "dice": "inaugurado el 3 de diciembre de 2024 en la Plaza de Santa María",
+        "fecha": "2026-10-02"
+      },
+      "n": 5
+    },
+    {
+      "id": "puerta-angeles",
+      "nombre": "Puerta de Los Ángeles",
+      "lat": 38.684933,
+      "lon": -7.100535,
+      "rumbo": 153.7,
+      "recta_m": 140,
+      "pie_m": 180,
+      "pie_osrm_m": 180,
+      "minutos": 3,
+      "anillo": 3,
+      "fuente": {
+        "osm": "node/9538573190",
+        "url": "https://www.openstreetmap.org/node/9538573190",
+        "punto": "nodo",
+        "fecha": "2026-10-02"
+      },
+      "corto": "Puerta de Los Ángeles",
+      "texto": "Una de las puertas de la muralla medieval.",
+      "n": 6,
+      "fuente_texto": {
+        "url": "https://turismodeolivenza.com/",
+        "dice": "«Puerta de Los Ángeles» y «Puerta de Alconchel»: puertas de la muralla medieval",
+        "fecha": "2026-10-02"
+      }
+    },
+    {
+      "id": "torre",
+      "nombre": "Alcázar y Torre del Homenaje",
+      "lat": 38.685303,
+      "lon": -7.099265,
+      "rumbo": 116.1,
+      "recta_m": 192,
+      "pie_m": 235,
+      "pie_osrm_m": 234,
+      "minutos": 3,
+      "anillo": 3,
+      "fuente": {
+        "osm": "node/9514512200",
+        "url": "https://www.openstreetmap.org/node/9514512200",
+        "punto": "nodo",
+        "fecha": "2026-10-02"
+      },
+      "corto": "Alcázar y Torre del Homenaje",
+      "texto": "La torre se visita en el horario del museo.",
+      "fuente_texto": {
+        "url": "https://museodeolivenza.com/horarios/",
+        "dice": "La Torre del Homenaje cierra media hora antes",
+        "fecha": "2026-10-02"
+      },
+      "n": 7
+    },
+    {
+      "id": "puerta-calvario",
+      "nombre": "Puerta del Calvario",
+      "lat": 38.688051,
+      "lon": -7.101764,
+      "rumbo": 348.6,
+      "recta_m": 226,
+      "pie_m": 245,
+      "pie_osrm_m": 243,
+      "minutos": 4,
+      "anillo": 5,
+      "fuente": {
+        "osm": "node/10000118795",
+        "url": "https://www.openstreetmap.org/node/10000118795",
+        "punto": "nodo",
+        "fecha": "2026-10-02"
+      },
+      "corto": "Puerta del Calvario",
+      "texto": "Al final de la calle Santiago, cuesta arriba: la única que queda de las tres puertas de la muralla abaluartada.",
+      "fuente_texto": {
+        "url": "https://turismodeolivenza.com/",
+        "dice": "única puerta que se conserva de las tres que poseía",
+        "fecha": "2026-10-02"
+      },
+      "n": 8
+    },
+    {
+      "id": "museo",
+      "nombre": "Museo Etnográfico Extremeño «González Santana»",
+      "lat": 38.685187,
+      "lon": -7.098935,
+      "rumbo": 115.8,
+      "recta_m": 223,
+      "pie_m": 295,
+      "pie_osrm_m": 295,
+      "minutos": 4,
+      "anillo": 5,
+      "fuente": {
+        "osm": "node/6966427582",
+        "url": "https://www.openstreetmap.org/node/6966427582",
+        "punto": "nodo",
+        "fecha": "2026-10-02"
+      },
+      "corto": "Museo Etnográfico González Santana",
+      "texto": "En el recinto del Alcázar. Su director firma el cartel de la chimenea.",
+      "fuente_texto": {
+        "url": "https://museodeolivenza.com/historia-del-edificio/",
+        "dice": "El Museo se halla instalado en […] el recinto del alcázar, la Panadería del Rey y el edificio de la Antigua Cámara Agraria",
+        "fecha": "2026-10-02"
+      },
+      "n": 9
+    },
+    {
+      "id": "plaza-espana",
+      "nombre": "Plaza de España",
+      "lat": 38.683595,
+      "lon": -7.101415,
+      "rumbo": 183,
+      "recta_m": 275,
+      "pie_m": 365,
+      "pie_osrm_m": 382,
+      "minutos": 5,
+      "anillo": 5,
+      "fuente": {
+        "osm": "way/146400721",
+        "url": "https://www.openstreetmap.org/way/146400721",
+        "punto": "centroide de los 7 nodos de la vía",
+        "fecha": "2026-10-02"
+      },
+      "corto": "Plaza de España",
+      "texto": "Hacia el sur, a cinco minutos.",
+      "n": 10
+    }
+  ]
+}

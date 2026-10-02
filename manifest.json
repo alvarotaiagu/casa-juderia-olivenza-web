@@ -1,0 +1,11 @@
+{
+  "name": "Casa de la Judería · Olivenza",
+  "short_name": "Casa de la Judería",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#ECEAE3",
+  "theme_color": "#ECEAE3",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,17 @@
+/* Páginas legales: misma letra y paleta, sin cortina ni movimiento. */
+.legal { background: var(--papel); }
+.legal__cabeza { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem var(--margen); border-bottom: 1px solid var(--linea); }
+.legal__cuerpo { max-width: 46rem; padding: clamp(2.4rem, 6vw, 4.5rem) 0; }
+.legal__cuerpo .titulo { margin-bottom: 2rem; }
+.legal__cuerpo h2 { font: 400 1.25rem/1.25 var(--f-titular); font-synthesis: none; color: var(--marca); margin: 2.2rem 0 .8rem; }
+.legal__cuerpo p { margin-bottom: .9rem; max-width: 64ch; }
+.legal__datos > div { display: grid; grid-template-columns: minmax(9rem, 34%) 1fr; gap: 1rem; padding: .6rem 0; border-bottom: 1px solid var(--linea); }
+.legal__datos dt { font-weight: 600; color: var(--tinta-suave); font-size: .9rem; }
+.legal__tabla { width: 100%; border-collapse: collapse; font-size: .92rem; margin: .4rem 0 1rem; }
+.legal__tabla th, .legal__tabla td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--linea); vertical-align: top; }
+.legal__tabla th { font-weight: 600; color: var(--tinta-suave); }
+.legal__lista { display: grid; gap: .6rem; }
+.legal__lista li { padding-left: 1rem; border-left: 2px solid var(--miel); }
+.legal__otra { margin-top: 2.4rem; }
+.legal__pie { padding: 1.4rem 0 2.4rem; border-top: 1px solid var(--linea); font-size: .88rem; color: var(--tinta-suave); }
+.pendiente { font-weight: 600; color: var(--miel-texto); }

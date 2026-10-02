@@ -1,0 +1,472 @@
+[
+ {
+  "id": "b01",
+  "origen": "01-831500463.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b02",
+  "origen": "02-893212799.jpg",
+  "w": 914,
+  "h": 659,
+  "verticales": null
+ },
+ {
+  "id": "b05",
+  "origen": "05-829938936.jpg",
+  "w": 2250,
+  "h": 3000,
+  "verticales": null
+ },
+ {
+  "id": "b06",
+  "origen": "06-830776553.jpg",
+  "w": 2250,
+  "h": 3270,
+  "verticales": {
+   "tipo": "homografia",
+   "fuga": [
+    1084,
+    -8463
+   ],
+   "n": 9,
+   "fuerza": 0.85,
+   "aspecto": 1.09,
+   "inclinacion_bordes": [
+    -5.4,
+    5.81
+   ],
+   "recorte": [
+    0,
+    1,
+    2250,
+    3000
+   ]
+  }
+ },
+ {
+  "id": "b08",
+  "origen": "08-830013611.jpg",
+  "w": 1671,
+  "h": 3360,
+  "verticales": {
+   "tipo": "homografia",
+   "fuga": [
+    993,
+    -2493
+   ],
+   "n": 11,
+   "fuerza": 0.33,
+   "aspecto": 1.12,
+   "inclinacion_bordes": [
+    -10.25,
+    7.04
+   ],
+   "recorte": [
+    1,
+    0,
+    1672,
+    3000
+   ]
+  }
+ },
+ {
+  "id": "b09",
+  "origen": "09-829938071.jpg",
+  "w": 2250,
+  "h": 3000,
+  "verticales": {
+   "tipo": "homografia",
+   "fuga": [
+    1457,
+    172894
+   ],
+   "n": 22,
+   "fuerza": 0.85,
+   "aspecto": 1.005,
+   "inclinacion_bordes": [
+    0.48,
+    -0.26
+   ],
+   "recorte": [
+    0,
+    0,
+    2250,
+    3000
+   ]
+  }
+ },
+ {
+  "id": "b10",
+  "origen": "10-893200844.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b11",
+  "origen": "11-893200562.jpg",
+  "w": 2250,
+  "h": 3000,
+  "verticales": null
+ },
+ {
+  "id": "b12",
+  "origen": "12-828629311.jpg",
+  "w": 2250,
+  "h": 3257,
+  "verticales": {
+   "tipo": "homografia",
+   "fuga": [
+    1163,
+    -8894
+   ],
+   "n": 7,
+   "fuerza": 0.85,
+   "aspecto": 1.086,
+   "inclinacion_bordes": [
+    -5.58,
+    5.22
+   ],
+   "recorte": [
+    0,
+    1,
+    2250,
+    3000
+   ]
+  }
+ },
+ {
+  "id": "b13",
+  "origen": "13-831503523.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b14",
+  "origen": "14-831503690.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b15",
+  "origen": "15-831799046.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b16",
+  "origen": "16-830802248.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b17",
+  "origen": "17-829955268.jpg",
+  "w": 2250,
+  "h": 3108,
+  "verticales": {
+   "tipo": "homografia",
+   "fuga": [
+    893,
+    24280
+   ],
+   "n": 19,
+   "fuerza": 0.85,
+   "aspecto": 1.036,
+   "inclinacion_bordes": [
+    2.11,
+    -3.2
+   ],
+   "recorte": [
+    0,
+    0,
+    2250,
+    3000
+   ]
+  }
+ },
+ {
+  "id": "b18",
+  "origen": "18-831797547.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b19",
+  "origen": "19-831797435.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b20",
+  "origen": "20-830820468.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b21",
+  "origen": "21-830819988.jpg",
+  "w": 2250,
+  "h": 3040,
+  "verticales": {
+   "tipo": "homografia",
+   "fuga": [
+    750,
+    -56431
+   ],
+   "n": 5,
+   "fuerza": 0.85,
+   "aspecto": 1.014,
+   "inclinacion_bordes": [
+    -0.72,
+    1.45
+   ],
+   "recorte": [
+    0,
+    1,
+    2250,
+    3000
+   ]
+  }
+ },
+ {
+  "id": "b22",
+  "origen": "22-829860169.jpg",
+  "w": 2250,
+  "h": 3000,
+  "verticales": null
+ },
+ {
+  "id": "b23",
+  "origen": "23-831797736.jpg",
+  "w": 2250,
+  "h": 3130,
+  "verticales": {
+   "tipo": "homografia",
+   "fuga": [
+    901,
+    20696
+   ],
+   "n": 12,
+   "fuerza": 0.85,
+   "aspecto": 1.043,
+   "inclinacion_bordes": [
+    2.49,
+    -3.73
+   ],
+   "recorte": [
+    0,
+    0,
+    2250,
+    3000
+   ]
+  }
+ },
+ {
+  "id": "b24",
+  "origen": "24-831797352.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b25",
+  "origen": "25-831797270.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b26",
+  "origen": "26-828629616.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b27",
+  "origen": "27-830802471.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b29",
+  "origen": "29-829842195.jpg",
+  "w": 2250,
+  "h": 3000,
+  "verticales": null
+ },
+ {
+  "id": "b30",
+  "origen": "30-829840123.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b31",
+  "origen": "31-831796961.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b32",
+  "origen": "32-830798603.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b33",
+  "origen": "33-830817841.jpg",
+  "w": 2250,
+  "h": 3000,
+  "verticales": null
+ },
+ {
+  "id": "b34",
+  "origen": "34-831795081.jpg",
+  "w": 2250,
+  "h": 3000,
+  "verticales": null
+ },
+ {
+  "id": "b35",
+  "origen": "35-858486821.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b36",
+  "origen": "36-858862443.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b37",
+  "origen": "37-831791007.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b38",
+  "origen": "38-858486689.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b39",
+  "origen": "39-831794046.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b40",
+  "origen": "40-831791510.jpg",
+  "w": 2250,
+  "h": 3079,
+  "verticales": {
+   "tipo": "homografia",
+   "fuga": [
+    239,
+    32061
+   ],
+   "n": 9,
+   "fuerza": 0.85,
+   "aspecto": 1.026,
+   "inclinacion_bordes": [
+    0.43,
+    -3.59
+   ],
+   "recorte": [
+    0,
+    0,
+    2250,
+    3000
+   ]
+  }
+ },
+ {
+  "id": "b41",
+  "origen": "41-830782927.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ },
+ {
+  "id": "b42",
+  "origen": "42-829939250.jpg",
+  "w": 2250,
+  "h": 3359,
+  "verticales": {
+   "tipo": "homografia",
+   "fuga": [
+    1132,
+    -4038
+   ],
+   "n": 7,
+   "fuerza": 0.54,
+   "aspecto": 1.12,
+   "inclinacion_bordes": [
+    -9.13,
+    9.03
+   ],
+   "recorte": [
+    0,
+    1,
+    2250,
+    3000
+   ]
+  }
+ },
+ {
+  "id": "b43",
+  "origen": "43-829938325.jpg",
+  "w": 2250,
+  "h": 3359,
+  "verticales": {
+   "tipo": "homografia",
+   "fuga": [
+    896,
+    -6240
+   ],
+   "n": 5,
+   "fuerza": 0.83,
+   "aspecto": 1.12,
+   "inclinacion_bordes": [
+    -5.54,
+    8.34
+   ],
+   "recorte": [
+    0,
+    1,
+    2250,
+    3000
+   ]
+  }
+ },
+ {
+  "id": "b44",
+  "origen": "44-829937516.jpg",
+  "w": 3000,
+  "h": 2250,
+  "verticales": null
+ }
+]

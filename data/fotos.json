@@ -1,0 +1,512 @@
+{
+ "nota": "Fotos de la ficha de Booking del alojamiento (numeradas como allí). Másteres en scripts/fuentes/graduadas (python scripts/fotos.py); versiones en assets/fotos (node scripts/fotos.mjs, que completa w, h y anchos).",
+ "fotos": [
+  {
+   "id": "b06",
+   "grupo": "comun",
+   "anchos_pedidos": [
+    640,
+    1080,
+    1600,
+    2200
+   ],
+   "alt": "La calle Santiago con la fachada encalada de la casa: la chimenea con la cruz y las dos rosetas, el balcón de forja y, abajo, la puerta 7A de madera con la placa azul AT.",
+   "w": 2250,
+   "h": 3270,
+   "anchos": [
+    640,
+    1080,
+    1600,
+    2200
+   ]
+  },
+  {
+   "id": "b02",
+   "grupo": "comun",
+   "alt": "La chimenea, de cerca: la cruz sobre su peana entre dos rosetas de seis pétalos, en relieve oscuro sobre la cal.",
+   "w": 914,
+   "h": 659,
+   "anchos": [
+    480,
+    914
+   ]
+  },
+  {
+   "id": "b08",
+   "grupo": "comun",
+   "alt": "La chimenea de la cruz sobre la puerta 7A, con la placa de la casa encima del distintivo AT.",
+   "w": 1671,
+   "h": 3360,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b09",
+   "grupo": "comun",
+   "alt": "La puerta 7A, de madera, en un marco de mármol, con la placa de la casa y el distintivo azul AT a la izquierda.",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b10",
+   "grupo": "comun",
+   "alt": "La escalera de subida desde la puerta de la calle, entre una pared de ladrillo y otra de piedra.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b11",
+   "grupo": "comun",
+   "alt": "El cartel «Simbología popular sobre chimeneas y jambas en Olivenza», enmarcado sobre una pared de ladrillo dentro de la casa.",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b05",
+   "grupo": "olivenza",
+   "alt": "Una calle encalada de Olivenza vista a través de un arco, con suelo empedrado.",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b42",
+   "grupo": "olivenza",
+   "alt": "La torre y la portada de la Iglesia de Santa María Magdalena, de piedra, con dos campanas.",
+   "w": 2250,
+   "h": 3359,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b43",
+   "grupo": "olivenza",
+   "alt": "La Iglesia de Santa María Magdalena vista en diagonal desde su plaza.",
+   "w": 2250,
+   "h": 3359,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b44",
+   "grupo": "olivenza",
+   "alt": "La Torre del Homenaje asomando sobre la muralla del Alcázar, entre palmeras.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b12",
+   "grupo": "J",
+   "alt": "Llegada al apartamento J: los últimos peldaños, una tinaja de barro y la J roja en la pared, junto a su puerta.",
+   "w": 2250,
+   "h": 3257,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b12j",
+   "grupo": "J",
+   "de": "b12",
+   "recorte": [
+    400,
+    775,
+    760,
+    1135
+   ],
+   "anchos_pedidos": [
+    240,
+    360
+   ],
+   "alt": "La J roja en la pared, junto a la puerta del apartamento J.",
+   "w": 360,
+   "h": 360,
+   "anchos": [
+    240
+   ]
+  },
+  {
+   "id": "b13",
+   "grupo": "J",
+   "alt": "Dormitorio del J: cama de 150 cm, ventilador de techo y ventana con visillos.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b14",
+   "grupo": "J",
+   "alt": "Dormitorio del J desde la cama, con la puerta de su baño al fondo.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b15",
+   "grupo": "J",
+   "alt": "El armario abierto del dormitorio del J, con perchas y el fondo empapelado de flores.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b16",
+   "grupo": "J",
+   "alt": "Baño del dormitorio del J: dos lavabos, ducha con mampara y cenefa de azulejo azul y amarillo.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b17",
+   "grupo": "J",
+   "alt": "Pasillo del J, con suelo de baldosa clara y un grabado enmarcado.",
+   "w": 2250,
+   "h": 3108,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b18",
+   "grupo": "J",
+   "alt": "Salón del J: sofá cama gris, sillón de mimbre, mesa redonda y una estantería negra.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b19",
+   "grupo": "J",
+   "alt": "Salón del J con el sofá, la tele y la ventana con visillos.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b20",
+   "grupo": "J",
+   "alt": "Rincón del salón del J con estantería de libros y juegos, sofá y cojín rojo.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b21",
+   "grupo": "J",
+   "alt": "Estantería del salón del J y un relieve de un torso en la pared.",
+   "w": 2250,
+   "h": 3040,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b22",
+   "grupo": "J",
+   "alt": "Segundo baño del J, completo, con bañera, lavabo y bidé.",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b23",
+   "grupo": "J",
+   "alt": "Pasillo del J hacia el salón.",
+   "w": 2250,
+   "h": 3130,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b24",
+   "grupo": "J",
+   "alt": "Cocina del J: muebles de madera, nevera, mesa blanca con sillas y aire acondicionado.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b25",
+   "grupo": "J",
+   "alt": "Cocina del J con la puerta que sale al patio.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b26",
+   "grupo": "J",
+   "alt": "El patio del J: suelo de baldosa roja, pared de ladrillo, mesa y dos sillas.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b27",
+   "grupo": "J",
+   "alt": "El patio del J desde el otro lado, con la mesa de cristal y flores.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b01",
+   "grupo": "A",
+   "alt": "El ático del apartamento A: salón y dormitorio en un mismo espacio bajo el techo inclinado, con claraboya y pared de piedra.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b29",
+   "grupo": "A",
+   "alt": "Llegada al apartamento A: rellano y puerta de madera junto a la escalera.",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b30",
+   "grupo": "A",
+   "alt": "Cocina del A, en la planta de abajo: muebles blancos, lavadora y unos escalones.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b31",
+   "grupo": "A",
+   "alt": "Cocina del A con mesa pequeña de cristal y armario blanco.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b32",
+   "grupo": "A",
+   "alt": "Detalle de la cocina del A: hervidor color crema y una báscula antigua sobre la pared de piedra.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b33",
+   "grupo": "A",
+   "alt": "Cafetera italiana, tostadora y hervidor en la encimera del A.",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b34",
+   "grupo": "A",
+   "alt": "La escalera interior del A que sube al ático, con claraboya.",
+   "w": 2250,
+   "h": 3000,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b35",
+   "grupo": "A",
+   "alt": "Vista general del ático del A: sofá cama, cama y zona de estar.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b36",
+   "grupo": "A",
+   "alt": "Zona de estar del ático del A: sillones de mimbre y una mesita con tablero de ajedrez.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b37",
+   "grupo": "A",
+   "alt": "El ático del A con su pared granate, sillón de mimbre y tele.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b38",
+   "grupo": "A",
+   "alt": "La cama de 150 cm del A delante de la pared granate, con lámparas a los lados.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b39",
+   "grupo": "A",
+   "alt": "El vestidor del A, junto al dormitorio.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b40",
+   "grupo": "A",
+   "alt": "Baño del A: ducha a ras de suelo, pared de piedra y mueble de madera.",
+   "w": 2250,
+   "h": 3079,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "b41",
+   "grupo": "A",
+   "alt": "La terraza del A con mesa de cristal, sillas y sombrilla; al fondo asoma la torre de una iglesia.",
+   "w": 3000,
+   "h": 2250,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  }
+ ]
+}

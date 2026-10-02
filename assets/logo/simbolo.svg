@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 424" fill="#483526">
+<title>Cruz del Calvario entre dos rosetas</title>
+<g class="simbolo__cruz">
+  <g class="cruz">
+    <rect class="cruz__palo" x="264.5" y="8" width="11" height="298"/>
+    <rect class="cruz__travesano" x="208" y="70" width="124" height="12"/>
+  </g>
+</g>
+<g class="simbolo__peana">
+  <rect class="peana__mesa" x="166.5" y="305" width="207" height="5"/>
+  <path class="peana__cuerpo" d="M202 319H338Q311.75 359.5 338.5 400H201.5Q228.25 359.5 202 319ZM294 357.3A24 24 0 1 0 246 357.3A24 24 0 1 0 294 357.3Z" fill-rule="evenodd"/>
+  <path class="peana__flor" d="M270 357.3Q275.6 348.55 270 339.8Q264.4 348.55 270 357.3ZM270 357.3Q280.38 357.77 285.16 348.55Q274.78 348.08 270 357.3ZM270 357.3Q274.78 366.52 285.16 366.05Q280.38 356.83 270 357.3ZM270 357.3Q264.4 366.05 270 374.8Q275.6 366.05 270 357.3ZM270 357.3Q259.62 356.83 254.84 366.05Q265.22 366.52 270 357.3ZM270 357.3Q265.22 348.08 254.84 348.55Q259.62 357.77 270 357.3Z"/>
+  <rect class="peana__base" x="186" y="409" width="168" height="6"/>
+</g>
+<g class="simbolo__roseta simbolo__roseta--izq" transform="translate(107 189.3)">
+  <g class="roseta">
+    <g class="roseta__dientes">
+      <path class="roseta__diente" d="M76 0L94.46 -17.14A96 96 0 0 1 94.46 17.14Z"/>
+      <path class="roseta__diente" d="M68.47 32.98L92.54 25.54A96 96 0 0 1 77.67 56.43Z"/>
+      <path class="roseta__diente" d="M47.39 59.42L72.29 63.16A96 96 0 0 1 45.49 84.54Z"/>
+      <path class="roseta__diente" d="M16.91 74.09L37.73 88.27A96 96 0 0 1 4.31 95.9Z"/>
+      <path class="roseta__diente" d="M-16.91 74.09L-4.31 95.9A96 96 0 0 1 -37.73 88.27Z"/>
+      <path class="roseta__diente" d="M-47.39 59.42L-45.49 84.54A96 96 0 0 1 -72.29 63.16Z"/>
+      <path class="roseta__diente" d="M-68.47 32.98L-77.67 56.43A96 96 0 0 1 -92.54 25.54Z"/>
+      <path class="roseta__diente" d="M-76 0L-94.46 17.14A96 96 0 0 1 -94.46 -17.14Z"/>
+      <path class="roseta__diente" d="M-68.47 -32.98L-92.54 -25.54A96 96 0 0 1 -77.67 -56.43Z"/>
+      <path class="roseta__diente" d="M-47.39 -59.42L-72.29 -63.16A96 96 0 0 1 -45.49 -84.54Z"/>
+      <path class="roseta__diente" d="M-16.91 -74.09L-37.73 -88.27A96 96 0 0 1 -4.31 -95.9Z"/>
+      <path class="roseta__diente" d="M16.91 -74.09L4.31 -95.9A96 96 0 0 1 37.73 -88.27Z"/>
+      <path class="roseta__diente" d="M47.39 -59.42L45.49 -84.54A96 96 0 0 1 72.29 -63.16Z"/>
+      <path class="roseta__diente" d="M68.47 -32.98L77.67 -56.43A96 96 0 0 1 92.54 -25.54Z"/>
+    </g>
+    <path class="roseta__anillo" d="M68.5 0A68.5 68.5 0 1 1 -68.5 0A68.5 68.5 0 1 1 68.5 0ZM53.5 0A53.5 53.5 0 1 0 -53.5 0A53.5 53.5 0 1 0 53.5 0Z" fill-rule="evenodd"/>
+    <path class="roseta__huecos" d="M4.75 2.74A43.87 43.87 0 0 0 48.62 2.74A43.87 43.87 0 0 0 26.68 40.73A43.87 43.87 0 0 0 4.75 2.74ZM0 5.48A43.87 43.87 0 0 0 21.94 43.48A43.87 43.87 0 0 0 -21.93 43.48A43.87 43.87 0 0 0 0 5.48ZM-4.75 2.74A43.87 43.87 0 0 0 -26.68 40.73A43.87 43.87 0 0 0 -48.62 2.74A43.87 43.87 0 0 0 -4.75 2.74ZM-4.75 -2.74A43.87 43.87 0 0 0 -48.62 -2.74A43.87 43.87 0 0 0 -26.68 -40.73A43.87 43.87 0 0 0 -4.75 -2.74ZM0 -5.48A43.87 43.87 0 0 0 -21.94 -43.48A43.87 43.87 0 0 0 21.94 -43.48A43.87 43.87 0 0 0 0 -5.48ZM4.75 -2.74A43.87 43.87 0 0 0 26.68 -40.73A43.87 43.87 0 0 0 48.62 -2.74A43.87 43.87 0 0 0 4.75 -2.74Z"/>
+  </g>
+</g>
+<g class="simbolo__roseta simbolo__roseta--der" transform="translate(433.5 189.3)">
+  <g class="roseta">
+    <g class="roseta__dientes">
+      <path class="roseta__diente" d="M76 0L94.46 -17.14A96 96 0 0 1 94.46 17.14Z"/>
+      <path class="roseta__diente" d="M68.47 32.98L92.54 25.54A96 96 0 0 1 77.67 56.43Z"/>
+      <path class="roseta__diente" d="M47.39 59.42L72.29 63.16A96 96 0 0 1 45.49 84.54Z"/>
+      <path class="roseta__diente" d="M16.91 74.09L37.73 88.27A96 96 0 0 1 4.31 95.9Z"/>
+      <path class="roseta__diente" d="M-16.91 74.09L-4.31 95.9A96 96 0 0 1 -37.73 88.27Z"/>
+      <path class="roseta__diente" d="M-47.39 59.42L-45.49 84.54A96 96 0 0 1 -72.29 63.16Z"/>
+      <path class="roseta__diente" d="M-68.47 32.98L-77.67 56.43A96 96 0 0 1 -92.54 25.54Z"/>
+      <path class="roseta__diente" d="M-76 0L-94.46 17.14A96 96 0 0 1 -94.46 -17.14Z"/>
+      <path class="roseta__diente" d="M-68.47 -32.98L-92.54 -25.54A96 96 0 0 1 -77.67 -56.43Z"/>
+      <path class="roseta__diente" d="M-47.39 -59.42L-72.29 -63.16A96 96 0 0 1 -45.49 -84.54Z"/>
+      <path class="roseta__diente" d="M-16.91 -74.09L-37.73 -88.27A96 96 0 0 1 -4.31 -95.9Z"/>
+      <path class="roseta__diente" d="M16.91 -74.09L4.31 -95.9A96 96 0 0 1 37.73 -88.27Z"/>
+      <path class="roseta__diente" d="M47.39 -59.42L45.49 -84.54A96 96 0 0 1 72.29 -63.16Z"/>
+      <path class="roseta__diente" d="M68.47 -32.98L77.67 -56.43A96 96 0 0 1 92.54 -25.54Z"/>
+    </g>
+    <path class="roseta__anillo" d="M68.5 0A68.5 68.5 0 1 1 -68.5 0A68.5 68.5 0 1 1 68.5 0ZM53.5 0A53.5 53.5 0 1 0 -53.5 0A53.5 53.5 0 1 0 53.5 0Z" fill-rule="evenodd"/>
+    <path class="roseta__huecos" d="M4.75 2.74A43.87 43.87 0 0 0 48.62 2.74A43.87 43.87 0 0 0 26.68 40.73A43.87 43.87 0 0 0 4.75 2.74ZM0 5.48A43.87 43.87 0 0 0 21.94 43.48A43.87 43.87 0 0 0 -21.93 43.48A43.87 43.87 0 0 0 0 5.48ZM-4.75 2.74A43.87 43.87 0 0 0 -26.68 40.73A43.87 43.87 0 0 0 -48.62 2.74A43.87 43.87 0 0 0 -4.75 2.74ZM-4.75 -2.74A43.87 43.87 0 0 0 -48.62 -2.74A43.87 43.87 0 0 0 -26.68 -40.73A43.87 43.87 0 0 0 -4.75 -2.74ZM0 -5.48A43.87 43.87 0 0 0 -21.94 -43.48A43.87 43.87 0 0 0 21.94 -43.48A43.87 43.87 0 0 0 0 -5.48ZM4.75 -2.74A43.87 43.87 0 0 0 26.68 -40.73A43.87 43.87 0 0 0 48.62 -2.74A43.87 43.87 0 0 0 4.75 -2.74Z"/>
+  </g>
+</g>
+</svg>
